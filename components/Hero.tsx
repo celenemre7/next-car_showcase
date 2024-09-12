@@ -1,13 +1,11 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
-import React from 'react'
-import CustomButton from './CustomButton'
+import Image from "next/image";
+import React from "react";
+import CustomButton from "./CustomButton";
 
 function hero() {
-  const handleScroll = () => {
-
-  }
+  const handleScroll = () => {};
   return (
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
@@ -15,23 +13,22 @@ function hero() {
           Find, book, or rent a car – quickly and easily!
         </h1>
         <p className="hero__subtitle">
-          Streamline your car rental experience with our effortless booking process.
+          Streamline your car rental experience with our effortless booking
+          process.
         </p>
-        <CustomButton 
+        <CustomButton
           title="Explore Cars"
           containerStyles="bg-primary-blue text-white rounded-full mt-10"
-          handleClick={handleScroll}
-        />
+          handleClick={handleScroll} btnType={"button"}        />
       </div>
-      <div className='hero__image-container'>
-        <div className='hero__image'>
-          <Image src="/hero.png" alt='hero' fill className='object-contain'/>
-          <div className='hero__image-overlay'/>
+      <div className="hero__image-container">
+        <div className="hero__image">
+          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          <div className="hero__image-overlay" />
         </div>
       </div>
     </div>
-      
-  )
+  );
 }
 
-export default hero
+export default hero;
